@@ -10,30 +10,19 @@ namespace Q7
 	{
 		static void Main(string[] args)
 		{
-			//string phone = "0935121246";
-			Console.Write("請輸入手機號碼： ");
-			string input=Console.ReadLine();
-			if (string.IsNullOrEmpty(input))
-			{
-				Console.WriteLine("您沒有輸入號碼！");
-				return;
-			}
-			if(input.Length !=10 )
-			{
-				Console.WriteLine("輸入號碼錯誤");
-				return;
-			}
-
+			double number1 = 1.12457;
+			double number2 = 100.3;
+			double sum=number1 + number2;
 			
-				string secretnumber = input.Substring(0, 4) + new string('*', 4) + input.Substring(7); 
-				Console.WriteLine(secretnumber);
-
-			
+			//string value=sum.ToString("0.00");
+			Console.WriteLine(sum.ToString("0.00"));
 			
 
-			
-			
-			
+
+
+
+
+
 		}
 	}
 }
